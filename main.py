@@ -1,3 +1,9 @@
+'''Привет! Для начала работы  нужно:
+Скопировать Css код или переместить в Qt Designer.
+Назвать файл.
+И указать название ниже.
+Пожалуйста оцените работу я старался :)'''
+
 import sys
 
 from PyQt5.QtWidgets import QMainWindow, QApplication
@@ -7,7 +13,8 @@ from PyQt5 import uic
 class App(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('calc_grafic.ui', self)
+        # Укажи своё название
+        uic.loadUi('Твоё название.ui', self)
         self.one.clicked.connect(self.one_k)
         self.two.clicked.connect(self.two_k)
         self.three.clicked.connect(self.three_k)
